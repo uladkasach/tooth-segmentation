@@ -1,4 +1,9 @@
 # tooth-segmentation
+### running
+to run, ensure the `matplotlib`, `scikitlearn`, `PIL`, and `numpy` packages for python are installed.
+`python segment.py`
+
+### overview
 This program does the following:
 1. conduct gap valley detection to find the gap valley between top and bottom teeth
     - calculate probability of depth and location as outlined in paper [1]
@@ -19,3 +24,4 @@ This program does the following:
 3. find contours of teeth
     - find gradient
     - remove noise by assessing dot product between gradient and vector from center to point
+    - use most reliable gradient as edge
