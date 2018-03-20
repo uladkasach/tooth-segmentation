@@ -5,7 +5,7 @@ This program does the following:
     - choose max probability as gap valley
     - setting sigma to be 20% for the position probability parameter
     - ![predictions_vs_spline](https://user-images.githubusercontent.com/10381896/37637560-d1b405ee-2bde-11e8-9d63-f04147291601.png)
-    
+
 2. conduct gap valley detection to find the gaps between each tooth (for top teeth and for bottom teeth);
     - define how many gap valleys to look for manually (similar to defining approximately where the gap valleys should be found)
     - calculate parameters of perpendicular lines and then generate a dense list of points for the line in the appropriate sector which will be used to calculate depth
@@ -17,4 +17,5 @@ This program does the following:
     - ![tooth_boxing](https://user-images.githubusercontent.com/10381896/37637558-d19ee40c-2bde-11e8-841b-d90767aa18f4.png)
 
 3. find contours of teeth
-    - in progress
+    - find gradient
+    - remove noise by assessing dot product between gradient and vector from center to point
